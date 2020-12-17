@@ -3,19 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0F623B255F6F1C001EF754 /* BrokenPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F623A255F6F1C001EF754 /* BrokenPartViewController.swift */; };
+		6A0F6240255FC87B001EF754 /* PetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F623F255FC87B001EF754 /* PetitionViewController.swift */; };
+		6A1FEB82257C8C3B003400DF /* buttonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FEB81257C8C3B003400DF /* buttonDesign.swift */; };
+		6A1FEB86257C98E6003400DF /* LineButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FEB85257C98E6003400DF /* LineButtonDesign.swift */; };
+		6A26037F255A400C00D199E5 /* LaptopApplyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26037E255A400C00D199E5 /* LaptopApplyListViewController.swift */; };
+		6A3401FB257F54F4004E8767 /* TextfieldGrayBoxDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3401FA257F54F4004E8767 /* TextfieldGrayBoxDesign.swift */; };
+		6A3401FE25806F40004E8767 /* TextFieldLeftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3401FD25806F40004E8767 /* TextFieldLeftPadding.swift */; };
+		6A3D9E1325621E0F00510B75 /* WritingPetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D9E1225621E0F00510B75 /* WritingPetitionViewController.swift */; };
+		6A4008322573587600E707E3 /* AllPetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4008312573587600E707E3 /* AllPetitionsViewController.swift */; };
+		6A421FEC25820A5C00B18B9D /* TabbarShadowViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A421FEB25820A5C00B18B9D /* TabbarShadowViewDesign.swift */; };
+		6A4824F8255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4824F7255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift */; };
 		6A5DECC525591C29003888A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DECC425591C29003888A5 /* AppDelegate.swift */; };
 		6A5DECC725591C29003888A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DECC625591C29003888A5 /* SceneDelegate.swift */; };
 		6A5DECC925591C29003888A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DECC825591C29003888A5 /* ViewController.swift */; };
 		6A5DECCC25591C29003888A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DECCA25591C29003888A5 /* Main.storyboard */; };
 		6A5DECCE25591C2A003888A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DECCD25591C2A003888A5 /* Assets.xcassets */; };
 		6A5DECD125591C2A003888A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DECCF25591C2A003888A5 /* LaunchScreen.storyboard */; };
+		6A5DECDC25591D3D003888A5 /* LaptopApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DECDB25591D3D003888A5 /* LaptopApplyViewController.swift */; };
+		6A7CCCC62582695300DCED67 /* TextfieldLeftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCCC52582695300DCED67 /* TextfieldLeftPadding.swift */; };
+		6AA13BCF256B8B1D00A6EE92 /* AddStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA13BCE256B8B1D00A6EE92 /* AddStudentsViewController.swift */; };
+		6AA20258258111520036EE11 /* titleBlueBoxDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA20257258111520036EE11 /* titleBlueBoxDesign.swift */; };
+		6AAF6E37255D7D6700512AB5 /* ProjectFriendMadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6E36255D7D6700512AB5 /* ProjectFriendMadeViewController.swift */; };
+		6AB4682A257DFC8C0080D7ED /* LabelGrayBoxDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB46829257DFC8C0080D7ED /* LabelGrayBoxDesign.swift */; };
+		6AB4682D257E3C940080D7ED /* ShortButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4682C257E3C940080D7ED /* ShortButtonDesign.swift */; };
+		6AC4B96B2587496D00756A04 /* GreenButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */; };
+		6AC4B96F258751B800756A04 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4B96E258751B800756A04 /* ProfileViewController.swift */; };
+		6AC63BB42581BAE100A79040 /* WhiteBoxViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC63BB32581BAE100A79040 /* WhiteBoxViewDesign.swift */; };
+		6AE48988257B7D0A00C76C0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48987257B7D0A00C76C0A /* GoogleService-Info.plist */; };
+		6AE48999257B7DE400C76C0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48998257B7DE400C76C0A /* LoginViewController.swift */; };
+		6AE4899C257B854E00C76C0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4899B257B854E00C76C0A /* SignUpViewController.swift */; };
+		6AFAE08D2563C758000DAC4E /* SchoolMealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE08C2563C758000DAC4E /* SchoolMealsViewController.swift */; };
+		6AFAE09B2563CCCC000DAC4E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFAE09A2563CCCC000DAC4E /* Alamofire */; };
+		6AFAE09F2563D5C5000DAC4E /* SchoolMealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE09E2563D5C5000DAC4E /* SchoolMealsModel.swift */; };
+		E096AC3B33035468C473CE0C /* Pods_GSMfestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21004993E6A19FF962215268 /* Pods_GSMfestival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21004993E6A19FF962215268 /* Pods_GSMfestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMfestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0F623A255F6F1C001EF754 /* BrokenPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenPartViewController.swift; sourceTree = "<group>"; };
+		6A0F623F255FC87B001EF754 /* PetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionViewController.swift; sourceTree = "<group>"; };
+		6A1FEB81257C8C3B003400DF /* buttonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonDesign.swift; sourceTree = "<group>"; };
+		6A1FEB85257C98E6003400DF /* LineButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButtonDesign.swift; sourceTree = "<group>"; };
+		6A26037E255A400C00D199E5 /* LaptopApplyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopApplyListViewController.swift; sourceTree = "<group>"; };
+		6A3401FA257F54F4004E8767 /* TextfieldGrayBoxDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldGrayBoxDesign.swift; sourceTree = "<group>"; };
+		6A3401FD25806F40004E8767 /* TextFieldLeftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLeftPadding.swift; sourceTree = "<group>"; };
+		6A3D9E1225621E0F00510B75 /* WritingPetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPetitionViewController.swift; sourceTree = "<group>"; };
+		6A4008312573587600E707E3 /* AllPetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPetitionsViewController.swift; sourceTree = "<group>"; };
+		6A421FEB25820A5C00B18B9D /* TabbarShadowViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarShadowViewDesign.swift; sourceTree = "<group>"; };
+		6A4824F7255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfStudyMoveApplyViewController.swift; sourceTree = "<group>"; };
 		6A5DECC125591C29003888A5 /* GSMfestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMfestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5DECC425591C29003888A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5DECC625591C29003888A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +64,23 @@
 		6A5DECCD25591C2A003888A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5DECD025591C2A003888A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5DECD225591C2A003888A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5DECDB25591D3D003888A5 /* LaptopApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopApplyViewController.swift; sourceTree = "<group>"; };
+		6A7CCCC52582695300DCED67 /* TextfieldLeftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldLeftPadding.swift; sourceTree = "<group>"; };
+		6AA13BCE256B8B1D00A6EE92 /* AddStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentsViewController.swift; sourceTree = "<group>"; };
+		6AA20257258111520036EE11 /* titleBlueBoxDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleBlueBoxDesign.swift; sourceTree = "<group>"; };
+		6AAF6E36255D7D6700512AB5 /* ProjectFriendMadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFriendMadeViewController.swift; sourceTree = "<group>"; };
+		6AB46829257DFC8C0080D7ED /* LabelGrayBoxDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelGrayBoxDesign.swift; sourceTree = "<group>"; };
+		6AB4682C257E3C940080D7ED /* ShortButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortButtonDesign.swift; sourceTree = "<group>"; };
+		6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButtonDesign.swift; sourceTree = "<group>"; };
+		6AC4B96E258751B800756A04 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6AC63BB32581BAE100A79040 /* WhiteBoxViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBoxViewDesign.swift; sourceTree = "<group>"; };
+		6AE48987257B7D0A00C76C0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AE48998257B7DE400C76C0A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6AE4899B257B854E00C76C0A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6AFAE08C2563C758000DAC4E /* SchoolMealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMealsViewController.swift; sourceTree = "<group>"; };
+		6AFAE09E2563D5C5000DAC4E /* SchoolMealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMealsModel.swift; sourceTree = "<group>"; };
+		6C6200A70D61434962FC45FA /* Pods-GSMfestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMfestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMfestival/Pods-GSMfestival.debug.xcconfig"; sourceTree = "<group>"; };
+		A501D8044DB2F0458FB3A80A /* Pods-GSMfestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMfestival.release.xcconfig"; path = "Target Support Files/Pods-GSMfestival/Pods-GSMfestival.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +88,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFAE09B2563CCCC000DAC4E /* Alamofire in Frameworks */,
+				E096AC3B33035468C473CE0C /* Pods_GSMfestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00249D54937857F614BD13C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C6200A70D61434962FC45FA /* Pods-GSMfestival.debug.xcconfig */,
+				A501D8044DB2F0458FB3A80A /* Pods-GSMfestival.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6030A5DBD04B0AD2B34066C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21004993E6A19FF962215268 /* Pods_GSMfestival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0F623D255FC838001EF754 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6AC4B96D258751A900756A04 /* Profile */,
+				6A1FEB80257C8C1C003400DF /* design */,
+				6AB46827257DB1F50080D7ED /* LoginSignUp */,
+				6AA13BCD256B8B0200A6EE92 /* Project */,
+				6AFAE0A12563D5CC000DAC4E /* SchoolMeals */,
+				6A3D9E1525621E1200510B75 /* PetitionViewController */,
+				6A5DECDB25591D3D003888A5 /* LaptopApplyViewController.swift */,
+				6A26037E255A400C00D199E5 /* LaptopApplyListViewController.swift */,
+				6A4824F7255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift */,
+				6A0F623A255F6F1C001EF754 /* BrokenPartViewController.swift */,
+				6A5DECC825591C29003888A5 /* ViewController.swift */,
+				6A3401FD25806F40004E8767 /* TextFieldLeftPadding.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6A1FEB80257C8C1C003400DF /* design */ = {
+			isa = PBXGroup;
+			children = (
+				6A1FEB81257C8C3B003400DF /* buttonDesign.swift */,
+				6A1FEB85257C98E6003400DF /* LineButtonDesign.swift */,
+				6AB46829257DFC8C0080D7ED /* LabelGrayBoxDesign.swift */,
+				6AB4682C257E3C940080D7ED /* ShortButtonDesign.swift */,
+				6A3401FA257F54F4004E8767 /* TextfieldGrayBoxDesign.swift */,
+				6AA20257258111520036EE11 /* titleBlueBoxDesign.swift */,
+				6AC63BB32581BAE100A79040 /* WhiteBoxViewDesign.swift */,
+				6A421FEB25820A5C00B18B9D /* TabbarShadowViewDesign.swift */,
+				6A7CCCC52582695300DCED67 /* TextfieldLeftPadding.swift */,
+				6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */,
+			);
+			path = design;
+			sourceTree = "<group>";
+		};
+		6A3D9E1525621E1200510B75 /* PetitionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A3D9E1225621E0F00510B75 /* WritingPetitionViewController.swift */,
+				6A0F623F255FC87B001EF754 /* PetitionViewController.swift */,
+				6A4008312573587600E707E3 /* AllPetitionsViewController.swift */,
+			);
+			path = PetitionViewController;
+			sourceTree = "<group>";
+		};
 		6A5DECB825591C29003888A5 = {
 			isa = PBXGroup;
 			children = (
 				6A5DECC325591C29003888A5 /* GSMfestival */,
 				6A5DECC225591C29003888A5 /* Products */,
+				00249D54937857F614BD13C6 /* Pods */,
+				6030A5DBD04B0AD2B34066C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +180,51 @@
 		6A5DECC325591C29003888A5 /* GSMfestival */ = {
 			isa = PBXGroup;
 			children = (
+				6A0F623D255FC838001EF754 /* ViewController */,
 				6A5DECC425591C29003888A5 /* AppDelegate.swift */,
 				6A5DECC625591C29003888A5 /* SceneDelegate.swift */,
-				6A5DECC825591C29003888A5 /* ViewController.swift */,
+				6AE48987257B7D0A00C76C0A /* GoogleService-Info.plist */,
 				6A5DECCA25591C29003888A5 /* Main.storyboard */,
 				6A5DECCD25591C2A003888A5 /* Assets.xcassets */,
 				6A5DECCF25591C2A003888A5 /* LaunchScreen.storyboard */,
 				6A5DECD225591C2A003888A5 /* Info.plist */,
 			);
 			path = GSMfestival;
+			sourceTree = "<group>";
+		};
+		6AA13BCD256B8B0200A6EE92 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				6AAF6E36255D7D6700512AB5 /* ProjectFriendMadeViewController.swift */,
+				6AA13BCE256B8B1D00A6EE92 /* AddStudentsViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		6AB46827257DB1F50080D7ED /* LoginSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6AE48998257B7DE400C76C0A /* LoginViewController.swift */,
+				6AE4899B257B854E00C76C0A /* SignUpViewController.swift */,
+			);
+			path = LoginSignUp;
+			sourceTree = "<group>";
+		};
+		6AC4B96D258751A900756A04 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6AC4B96E258751B800756A04 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6AFAE0A12563D5CC000DAC4E /* SchoolMeals */ = {
+			isa = PBXGroup;
+			children = (
+				6AFAE09E2563D5C5000DAC4E /* SchoolMealsModel.swift */,
+				6AFAE08C2563C758000DAC4E /* SchoolMealsViewController.swift */,
+			);
+			path = SchoolMeals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +234,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A5DECD525591C2A003888A5 /* Build configuration list for PBXNativeTarget "GSMfestival" */;
 			buildPhases = (
+				2C16879D146C453D96C374FC /* [CP] Check Pods Manifest.lock */,
 				6A5DECBD25591C29003888A5 /* Sources */,
 				6A5DECBE25591C29003888A5 /* Frameworks */,
 				6A5DECBF25591C29003888A5 /* Resources */,
+				55266C074641C72FF3713404 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GSMfestival;
+			packageProductDependencies = (
+				6AFAE09A2563CCCC000DAC4E /* Alamofire */,
+			);
 			productName = GSMfestival;
 			productReference = 6A5DECC125591C29003888A5 /* GSMfestival.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 6A5DECB825591C29003888A5;
+			packageReferences = (
+				6AFAE0992563CCCC000DAC4E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6A5DECC225591C29003888A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5DECD125591C2A003888A5 /* LaunchScreen.storyboard in Resources */,
+				6AE48988257B7D0A00C76C0A /* GoogleService-Info.plist in Resources */,
 				6A5DECCE25591C2A003888A5 /* Assets.xcassets in Resources */,
 				6A5DECCC25591C29003888A5 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +301,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C16879D146C453D96C374FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GSMfestival-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55266C074641C72FF3713404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSMfestival/Pods-GSMfestival-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSMfestival/Pods-GSMfestival-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GSMfestival/Pods-GSMfestival-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A5DECBD25591C29003888A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA20258258111520036EE11 /* titleBlueBoxDesign.swift in Sources */,
+				6AB4682D257E3C940080D7ED /* ShortButtonDesign.swift in Sources */,
+				6AC4B96B2587496D00756A04 /* GreenButtonDesign.swift in Sources */,
+				6A7CCCC62582695300DCED67 /* TextfieldLeftPadding.swift in Sources */,
+				6A0F623B255F6F1C001EF754 /* BrokenPartViewController.swift in Sources */,
+				6AFAE08D2563C758000DAC4E /* SchoolMealsViewController.swift in Sources */,
+				6A421FEC25820A5C00B18B9D /* TabbarShadowViewDesign.swift in Sources */,
+				6A3401FB257F54F4004E8767 /* TextfieldGrayBoxDesign.swift in Sources */,
+				6AB4682A257DFC8C0080D7ED /* LabelGrayBoxDesign.swift in Sources */,
+				6A0F6240255FC87B001EF754 /* PetitionViewController.swift in Sources */,
+				6AE48999257B7DE400C76C0A /* LoginViewController.swift in Sources */,
+				6AAF6E37255D7D6700512AB5 /* ProjectFriendMadeViewController.swift in Sources */,
+				6A3401FE25806F40004E8767 /* TextFieldLeftPadding.swift in Sources */,
+				6AFAE09F2563D5C5000DAC4E /* SchoolMealsModel.swift in Sources */,
+				6A3D9E1325621E0F00510B75 /* WritingPetitionViewController.swift in Sources */,
+				6AA13BCF256B8B1D00A6EE92 /* AddStudentsViewController.swift in Sources */,
+				6A1FEB82257C8C3B003400DF /* buttonDesign.swift in Sources */,
+				6AC63BB42581BAE100A79040 /* WhiteBoxViewDesign.swift in Sources */,
+				6AC4B96F258751B800756A04 /* ProfileViewController.swift in Sources */,
+				6A1FEB86257C98E6003400DF /* LineButtonDesign.swift in Sources */,
 				6A5DECC925591C29003888A5 /* ViewController.swift in Sources */,
+				6A4008322573587600E707E3 /* AllPetitionsViewController.swift in Sources */,
+				6AE4899C257B854E00C76C0A /* SignUpViewController.swift in Sources */,
 				6A5DECC525591C29003888A5 /* AppDelegate.swift in Sources */,
 				6A5DECC725591C29003888A5 /* SceneDelegate.swift in Sources */,
+				6A5DECDC25591D3D003888A5 /* LaptopApplyViewController.swift in Sources */,
+				6A4824F8255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift in Sources */,
+				6A26037F255A400C00D199E5 /* LaptopApplyListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,16 +519,19 @@
 		};
 		6A5DECD625591C2A003888A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C6200A70D61434962FC45FA /* Pods-GSMfestival.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q25U65UWAP;
 				INFOPLIST_FILE = GSMfestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yujin.GSMfestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -302,16 +541,19 @@
 		};
 		6A5DECD725591C2A003888A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A501D8044DB2F0458FB3A80A /* Pods-GSMfestival.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q25U65UWAP;
 				INFOPLIST_FILE = GSMfestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yujin.GSMfestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -341,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AFAE0992563CCCC000DAC4E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AFAE09A2563CCCC000DAC4E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFAE0992563CCCC000DAC4E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A5DECB925591C29003888A5 /* Project object */;
 }
