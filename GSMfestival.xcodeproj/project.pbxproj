@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0DC594259D838300766DB4 /* GrayBoxViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0DC593259D838300766DB4 /* GrayBoxViewDesign.swift */; };
 		6A0F623B255F6F1C001EF754 /* BrokenPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F623A255F6F1C001EF754 /* BrokenPartViewController.swift */; };
 		6A0F6240255FC87B001EF754 /* PetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F623F255FC87B001EF754 /* PetitionViewController.swift */; };
 		6A1FEB82257C8C3B003400DF /* buttonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FEB81257C8C3B003400DF /* buttonDesign.swift */; };
@@ -31,12 +32,14 @@
 		6AAF6E37255D7D6700512AB5 /* ProjectFriendMadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6E36255D7D6700512AB5 /* ProjectFriendMadeViewController.swift */; };
 		6AB4682A257DFC8C0080D7ED /* LabelGrayBoxDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB46829257DFC8C0080D7ED /* LabelGrayBoxDesign.swift */; };
 		6AB4682D257E3C940080D7ED /* ShortButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4682C257E3C940080D7ED /* ShortButtonDesign.swift */; };
+		6AC3671525933EA7002FBEFD /* PetitionTitleContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC3671425933EA7002FBEFD /* PetitionTitleContentTableViewCell.swift */; };
 		6AC4B96B2587496D00756A04 /* GreenButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */; };
 		6AC4B96F258751B800756A04 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4B96E258751B800756A04 /* ProfileViewController.swift */; };
 		6AC63BB42581BAE100A79040 /* WhiteBoxViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC63BB32581BAE100A79040 /* WhiteBoxViewDesign.swift */; };
 		6AE48988257B7D0A00C76C0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE48987257B7D0A00C76C0A /* GoogleService-Info.plist */; };
 		6AE48999257B7DE400C76C0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE48998257B7DE400C76C0A /* LoginViewController.swift */; };
 		6AE4899C257B854E00C76C0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE4899B257B854E00C76C0A /* SignUpViewController.swift */; };
+		6AEB40D225A56408005E3E73 /* whiteButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEB40D125A56408005E3E73 /* whiteButtonDesign.swift */; };
 		6AFAE08D2563C758000DAC4E /* SchoolMealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE08C2563C758000DAC4E /* SchoolMealsViewController.swift */; };
 		6AFAE09B2563CCCC000DAC4E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFAE09A2563CCCC000DAC4E /* Alamofire */; };
 		6AFAE09F2563D5C5000DAC4E /* SchoolMealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE09E2563D5C5000DAC4E /* SchoolMealsModel.swift */; };
@@ -45,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		21004993E6A19FF962215268 /* Pods_GSMfestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMfestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0DC593259D838300766DB4 /* GrayBoxViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBoxViewDesign.swift; sourceTree = "<group>"; };
 		6A0F623A255F6F1C001EF754 /* BrokenPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenPartViewController.swift; sourceTree = "<group>"; };
 		6A0F623F255FC87B001EF754 /* PetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionViewController.swift; sourceTree = "<group>"; };
 		6A1FEB81257C8C3B003400DF /* buttonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonDesign.swift; sourceTree = "<group>"; };
@@ -71,12 +75,14 @@
 		6AAF6E36255D7D6700512AB5 /* ProjectFriendMadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFriendMadeViewController.swift; sourceTree = "<group>"; };
 		6AB46829257DFC8C0080D7ED /* LabelGrayBoxDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelGrayBoxDesign.swift; sourceTree = "<group>"; };
 		6AB4682C257E3C940080D7ED /* ShortButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortButtonDesign.swift; sourceTree = "<group>"; };
+		6AC3671425933EA7002FBEFD /* PetitionTitleContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionTitleContentTableViewCell.swift; sourceTree = "<group>"; };
 		6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButtonDesign.swift; sourceTree = "<group>"; };
 		6AC4B96E258751B800756A04 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6AC63BB32581BAE100A79040 /* WhiteBoxViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBoxViewDesign.swift; sourceTree = "<group>"; };
 		6AE48987257B7D0A00C76C0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AE48998257B7DE400C76C0A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6AE4899B257B854E00C76C0A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6AEB40D125A56408005E3E73 /* whiteButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiteButtonDesign.swift; sourceTree = "<group>"; };
 		6AFAE08C2563C758000DAC4E /* SchoolMealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMealsViewController.swift; sourceTree = "<group>"; };
 		6AFAE09E2563D5C5000DAC4E /* SchoolMealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMealsModel.swift; sourceTree = "<group>"; };
 		6C6200A70D61434962FC45FA /* Pods-GSMfestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMfestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMfestival/Pods-GSMfestival.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 				6A421FEB25820A5C00B18B9D /* TabbarShadowViewDesign.swift */,
 				6A7CCCC52582695300DCED67 /* TextfieldLeftPadding.swift */,
 				6AC4B96A2587496D00756A04 /* GreenButtonDesign.swift */,
+				6A0DC593259D838300766DB4 /* GrayBoxViewDesign.swift */,
+				6AEB40D125A56408005E3E73 /* whiteButtonDesign.swift */,
 			);
 			path = design;
 			sourceTree = "<group>";
@@ -152,9 +160,9 @@
 		6A3D9E1525621E1200510B75 /* PetitionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6AC3671325933E8C002FBEFD /* TableView */,
 				6A3D9E1225621E0F00510B75 /* WritingPetitionViewController.swift */,
 				6A0F623F255FC87B001EF754 /* PetitionViewController.swift */,
-				6A4008312573587600E707E3 /* AllPetitionsViewController.swift */,
 			);
 			path = PetitionViewController;
 			sourceTree = "<group>";
@@ -208,6 +216,15 @@
 				6AE4899B257B854E00C76C0A /* SignUpViewController.swift */,
 			);
 			path = LoginSignUp;
+			sourceTree = "<group>";
+		};
+		6AC3671325933E8C002FBEFD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6A4008312573587600E707E3 /* AllPetitionsViewController.swift */,
+				6AC3671425933EA7002FBEFD /* PetitionTitleContentTableViewCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		6AC4B96D258751A900756A04 /* Profile */ = {
@@ -349,11 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA20258258111520036EE11 /* titleBlueBoxDesign.swift in Sources */,
+				6A0DC594259D838300766DB4 /* GrayBoxViewDesign.swift in Sources */,
 				6AB4682D257E3C940080D7ED /* ShortButtonDesign.swift in Sources */,
 				6AC4B96B2587496D00756A04 /* GreenButtonDesign.swift in Sources */,
 				6A7CCCC62582695300DCED67 /* TextfieldLeftPadding.swift in Sources */,
 				6A0F623B255F6F1C001EF754 /* BrokenPartViewController.swift in Sources */,
 				6AFAE08D2563C758000DAC4E /* SchoolMealsViewController.swift in Sources */,
+				6AEB40D225A56408005E3E73 /* whiteButtonDesign.swift in Sources */,
 				6A421FEC25820A5C00B18B9D /* TabbarShadowViewDesign.swift in Sources */,
 				6A3401FB257F54F4004E8767 /* TextfieldGrayBoxDesign.swift in Sources */,
 				6AB4682A257DFC8C0080D7ED /* LabelGrayBoxDesign.swift in Sources */,
@@ -374,6 +393,7 @@
 				6A5DECC525591C29003888A5 /* AppDelegate.swift in Sources */,
 				6A5DECC725591C29003888A5 /* SceneDelegate.swift in Sources */,
 				6A5DECDC25591D3D003888A5 /* LaptopApplyViewController.swift in Sources */,
+				6AC3671525933EA7002FBEFD /* PetitionTitleContentTableViewCell.swift in Sources */,
 				6A4824F8255CFB530044AAB9 /* SelfStudyMoveApplyViewController.swift in Sources */,
 				6A26037F255A400C00D199E5 /* LaptopApplyListViewController.swift in Sources */,
 			);

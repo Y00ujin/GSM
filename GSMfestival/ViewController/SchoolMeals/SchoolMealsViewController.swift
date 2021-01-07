@@ -11,34 +11,49 @@ import Alamofire
 
 
 class SchoolMealsViewController: UIViewController{
+    
     @IBOutlet weak var schoolMealContentLabel: UILabel!
+    
     @IBOutlet weak var schoolMealDateLabel: UILabel!
+    
     @IBOutlet weak var schoolMealTimeLabel: UILabel!
+    
     @IBOutlet weak var breakfastBtn: UIButton!
+    
     @IBOutlet weak var lunchBtn: ShortButtonDesign!
+    
     @IBOutlet weak var dinnerBtn: ShortButtonDesign!
+    
     @IBOutlet weak var tabbarShadowView: UIView!
     
     @IBOutlet weak var profileButton: UIButton!
+    
+    @IBOutlet weak var chervonRight: UIButton!
+    
+    @IBOutlet weak var chervonLeft: UIButton!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
     var currentTimeInt: Int = 0
     var currentDateInt: Int = 0
+    
+    var todayOrTomorrow: String = ""
     
     let formatter = DateFormatter()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getCurrentDate()
         
-        profileButton.contentVerticalAlignment = .fill
-        profileButton.contentHorizontalAlignment = .fill
-        profileButton.imageEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        chervonLeft.isHidden = true
+        
+        todayOrTomorrow = "today"
+        
+        profileButton.imageEdgeInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         
         schoolMealDateLabel.isHidden = true
         schoolMealTimeLabel.isHidden = true
 
-        print("현재날짜 : "+(getCurrentDate()))
-        print("현재시각 : "+(getCurrentTime()))
         
         if(currentTimeInt >= 19){ // 석식 후에는 다음 날의 아침이 나오게
             lunchBtn.setTitleColor(.gray, for: .normal)
@@ -47,6 +62,7 @@ class SchoolMealsViewController: UIViewController{
             BlueButton(button: breakfastBtn)
             LineButton(button: lunchBtn)
             LineButton(button: dinnerBtn)
+            
             apiCall(schoolMealCode: "1", schoolMealDate: getCurrentDate())
         } else if(currentTimeInt <= 12){ // 점심
             breakfastBtn.setTitleColor(.gray, for: .normal)
@@ -56,6 +72,7 @@ class SchoolMealsViewController: UIViewController{
             BlueButton(button: lunchBtn)
             LineButton(button: breakfastBtn)
             LineButton(button: dinnerBtn)
+            
             apiCall(schoolMealCode: "2", schoolMealDate: getCurrentDate())
         } else if(currentTimeInt >= 12){
             lunchBtn.setTitleColor(.gray, for: .normal)
@@ -64,9 +81,34 @@ class SchoolMealsViewController: UIViewController{
             BlueButton(button: dinnerBtn)
             LineButton(button: breakfastBtn)
             LineButton(button: lunchBtn)
+            
             apiCall(schoolMealCode: "3", schoolMealDate: getCurrentDate())
         }
     }
+    
+    @IBAction func chervonRight(_ sender: Any) {
+        chervonRight.isHidden = true
+        chervonLeft.isHidden = false
+        todayOrTomorrow = "tomorrow"
+        apiCall(schoolMealCode: "1", schoolMealDate: tomorrowDate())
+        dateLabel.text = "내일"
+        BlueButton(button: breakfastBtn)
+        LineButton(button: dinnerBtn)
+        LineButton(button: lunchBtn)
+    }
+    
+    @IBAction func chervonLeft(_ sender: Any) {
+        chervonLeft.isHidden = true
+        chervonRight.isHidden = false
+        todayOrTomorrow = "today"
+        apiCall(schoolMealCode: "1", schoolMealDate: getCurrentDate())
+        dateLabel.text = "오늘"
+        BlueButton(button: breakfastBtn)
+        LineButton(button: dinnerBtn)
+        LineButton(button: lunchBtn)
+    }
+    
+    
     // 아침을 누르면 조식
     @IBAction func schoolMealBreakfastBtn(_ sender: Any) {
         lunchBtn.setTitleColor(.gray, for: .normal)
@@ -75,29 +117,44 @@ class SchoolMealsViewController: UIViewController{
         BlueButton(button: breakfastBtn)
         LineButton(button: lunchBtn)
         LineButton(button: dinnerBtn)
-        apiCall(schoolMealCode: "1", schoolMealDate: getCurrentDate())
+        
+        if(todayOrTomorrow == "today"){
+            apiCall(schoolMealCode: "1", schoolMealDate: getCurrentDate())
+        }else{
+            apiCall(schoolMealCode: "1", schoolMealDate: tomorrowDate())
+        }
     }
     
     // 점심을 누르면 중식
-    @IBAction func schoolMealLunchBtn(_ sender: Any) {        breakfastBtn.setTitleColor(.gray, for: .normal)
+    @IBAction func schoolMealLunchBtn(_ sender: Any) {
+        breakfastBtn.setTitleColor(.gray, for: .normal)
         dinnerBtn.setTitleColor(.gray, for: .normal)
         lunchBtn.setTitleColor(.white, for: .normal)
         BlueButton(button: lunchBtn)
         LineButton(button: breakfastBtn)
         LineButton(button: dinnerBtn)
-        apiCall(schoolMealCode: "2", schoolMealDate: getCurrentDate())
+        
+        if(todayOrTomorrow == "today"){
+            apiCall(schoolMealCode: "2", schoolMealDate: getCurrentDate())
+        }else{
+            apiCall(schoolMealCode: "2", schoolMealDate: tomorrowDate())
+        }
     }
     
     // 저녁을 누르면 석식
-    @IBAction func schoolMealDinner(_ sender: Any) { // -> 여기는 현재 날짜 변수 넣기
+    @IBAction func schoolMealDinner(_ sender: Any) {
         lunchBtn.setTitleColor(.gray, for: .normal)
         breakfastBtn.setTitleColor(.gray, for: .normal)
         dinnerBtn.setTitleColor(.white, for: .normal)
         BlueButton(button: dinnerBtn)
         LineButton(button: breakfastBtn)
         LineButton(button: lunchBtn)
-        apiCall(schoolMealCode: "3", schoolMealDate: getCurrentDate())
-    }
+        
+        if(todayOrTomorrow == "today"){
+            apiCall(schoolMealCode: "3", schoolMealDate: getCurrentDate())
+        }else{
+            apiCall(schoolMealCode: "3", schoolMealDate: tomorrowDate())
+        }    }
     
     
     
@@ -119,6 +176,23 @@ class SchoolMealsViewController: UIViewController{
         } else{
             return currentDate
         }
+    }
+    
+    // 내일의 날짜
+    func tomorrowDate() -> String{
+        let today = Date()
+        let todayFormatter = DateFormatter()
+        todayFormatter.locale = Locale(identifier: "ko")
+        todayFormatter.dateFormat = "yyyyMMdd"
+        let currentDate = todayFormatter.string(from: Date())
+        let tomorrowFormatter = DateFormatter()
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: today)
+        tomorrowFormatter.locale = Locale(identifier: "ko")
+        tomorrowFormatter.dateFormat = "yyyyMMdd"
+        let tomorrowDate = tomorrowFormatter.string(from: tomorrow!)
+
+        return tomorrowDate
+        
     }
     
     func getCurrentTime() -> String{
@@ -175,6 +249,7 @@ class SchoolMealsViewController: UIViewController{
         button.layer.shadowOpacity = 0.3 // alphabutton
         button.backgroundColor = UIColor(red: 37/255, green: 94/255, blue: 141/255, alpha: 1)
         button.tintColor = UIColor.white
+        button.setTitleColor(.white, for: .normal)
     }
     
     func LineButton(button: UIButton) {
@@ -188,6 +263,8 @@ class SchoolMealsViewController: UIViewController{
         button.layer.borderColor = CGColor(red: 37/255, green: 94/255, blue: 141/255, alpha: 1)
         button.backgroundColor = .white
         button.tintColor = UIColor.white
+        button.setTitleColor(.gray, for: .normal)
+        button.setTitleColor(.gray, for: .normal)
     }
 }
 

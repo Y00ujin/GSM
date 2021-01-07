@@ -56,12 +56,6 @@ class BrokenPartViewController: UIViewController{
     // 선택된 라벨
     @IBOutlet weak var selectedPlaceLabel: UILabel!
     
-    // 하나 더 건의하기 버튼
-    @IBOutlet weak var ApplyAgainButton: UIButton!
-    
-    // 건의 2 라벨
-    @IBOutlet weak var ApplyAgainLabel: UILabel!
-    
     var a: Int = 1
     
     var submitAppear: Bool = true
@@ -103,6 +97,9 @@ class BrokenPartViewController: UIViewController{
         }else{
             menWomenToiletButtonView.isHidden = false
         }
+        
+        womenToiletButtonView.isHidden = true
+        menToiletButtonView.isHidden = true
     }
     
     // 홈베이스 버튼
@@ -171,54 +168,69 @@ class BrokenPartViewController: UIViewController{
     @IBAction func FourHomebaseButton(_ sender: Any) {
         selectedPlaceLabel.text = "4층 홈베이스"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
+
+        
     }
     
     // 3층 홈베 버튼
     @IBAction func ThreeHomebaseButton(_ sender: Any) {
         selectedPlaceLabel.text = "3층 홈베이스"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
+
     }
     
     // 2층 홈베 버튼
     @IBAction func SecondHomebaseButton(_ sender: Any) {
         selectedPlaceLabel.text = "2층 홈베이스"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
+
     }
     
     // 4층 남자화장실
     @IBAction func FourMenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "4층 남자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
+
     }
     
     // 3층 남자화장실
     @IBAction func ThreeMenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "3층 남자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
+
     }
     
     // 2층 남자화장실
     @IBAction func secondMenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "2층 남자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
     }
     
     // 4층 여자화장실
     @IBAction func FourWomenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "4층 여자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
     }
     
     // 3층 여자화장실
     @IBAction func ThreeWomenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "3층 여자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
     }
     
     // 2층 여자화장실
     @IBAction func SecondMenToiletButton(_ sender: Any) {
         selectedPlaceLabel.text = "2층 여자화장실"
         AfterChoosePlaceViewChange()
+        BrokenPartDetailTextField.text = ""
     }
     
     
@@ -228,6 +240,10 @@ class BrokenPartViewController: UIViewController{
         resultView.isHidden = true
         detailTextFieldView.isHidden = true
         choosePlaceView.isHidden = false
+        homeBaseButtonView.isHidden = true
+        menToiletButtonView.isHidden = true
+        womenToiletButtonView.isHidden = true
+        menWomenToiletButtonView.isHidden = true
         
     }
     
@@ -236,28 +252,13 @@ class BrokenPartViewController: UIViewController{
         detailTextFieldView.isHidden = false
     }
     
-    // 하나 더 건의하기
-    @IBAction func ApplyAgainButton(_ sender: Any) {
-        resultView.isHidden = true
-        detailTextFieldView.isHidden = true
-        choosePlaceView.isHidden = false
-    }
-    
     // 텍필 제출
     @IBAction func BrokenPartDetailSubmitBtn(_ sender: Any) {
         resultView.isHidden = false
         detailTextFieldView.isHidden = true
         choosePlaceView.isHidden = true
-        if(firstApply == true){
-            ApplyAgainLabel.text = """
-                장소 : \(selectedPlaceLabel.text ?? "") \
-                세부사항 : \(BrokenPartDetailTextField.text ?? "")
-                """
-        }else{
-            BrokenPartList.text! += """
-                장소 : \(selectedPlaceLabel.text ?? "") \
-                세부사항 : \(BrokenPartDetailTextField.text ?? "")
-                """
-        }
+
+        BrokenPartList.text! = "장소 : \(selectedPlaceLabel.text ?? "")\n\n세부사항 : \(BrokenPartDetailTextField.text ?? "")"
+        
     }
 }

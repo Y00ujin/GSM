@@ -40,9 +40,14 @@ class LoginViewController: UIViewController{
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwardTextField.text!) { [self] (user, error) in
 
                    if user != nil{
+                    
                     let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "tabBarViewController")
+                    
+                    // 로그인 성공 ? -> tabBarViewController로 화면 push
                     self.navigationController?.pushViewController(pushVC!, animated: true)
-                       print("login success")
+                    
+                    print("login success")
+                    
                     UserDefaults.standard.set(emailTextField.text, forKey: "email")
                     UserDefaults.standard.set(passwardTextField.text, forKey: "passward")
                     
@@ -56,6 +61,7 @@ class LoginViewController: UIViewController{
 
              }
     }
+    
     @IBAction func pwShowButton(_ sender: Any) {
         if(iconClick == true) {
             passwardTextField.isSecureTextEntry = false

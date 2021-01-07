@@ -10,8 +10,11 @@ import UIKit
 class ProfileViewController: UIViewController{
     
     @IBOutlet weak var backButton: UIButton!
+    
+    
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwardLabel: UILabel!
+    @IBOutlet weak var nameNumberLabel: UILabel!
     
     var emailString: String!
     var passwardString: String!
@@ -20,7 +23,10 @@ class ProfileViewController: UIViewController{
         
         super.viewDidLoad()
         
-        
+        print(UserDefaults.standard.string(forKey: "email")!)
+        print(UserDefaults.standard.string(forKey: "passward")!)
+
+        nameNumberLabel.text = "\(UserDefaults.standard.string(forKey: "number") ?? "") \(UserDefaults.standard.string(forKey: "name") ?? "")"
         emailLabel.text = UserDefaults.standard.string(forKey: "email")
         passwardLabel.text = UserDefaults.standard.string(forKey: "passward")
 
@@ -32,6 +38,7 @@ class ProfileViewController: UIViewController{
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
